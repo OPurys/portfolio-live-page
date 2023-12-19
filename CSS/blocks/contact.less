@@ -1,0 +1,50 @@
+// main: ../style.less
+
+.contact {
+    display: flex;
+
+    @media @tablet {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+.contact__left {
+    width: 47%;
+    padding: 2rem;
+
+    @media @tablet {
+        order: 2;
+    }
+
+    @media @mobile {
+        width: auto;
+    }
+}
+
+.contact__info {
+    margin: 2rem 0 3rem;
+    padding: 0;
+    list-style: none;
+
+    font-style: 0.94rem;
+    color: @black;
+    font-weight: 300;
+}
+
+.contact__info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.7rem;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.contact__info-icon {
+    margin-right: 0.75rem;
+
+    width: 15px;
+    height: 15px;
+}
